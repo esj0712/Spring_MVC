@@ -64,7 +64,8 @@ public class Homecontroller extends HttpServlet{
 			
 			viewName="test2.jsp";
 		}
-		
+		RequestDispatcher dis= request.getRequestDispatcher(viewName);
+		dis.forward(request, response);
 		
 	}
 	
